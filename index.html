@@ -54,20 +54,19 @@
                 <img src="images/Boundary.jpg" alt="Boundary_png" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
-                <a href="https://drive.google.com/file/d/1H4YPovfrvcce3HGMEhidwU2l2fTcNR5y/view?usp=sharing">
-                  <span class="papertitle">Boundary Cues for 3D Object Shape Recovery</span>
+                <a href="https://icml.cc/virtual/2023/poster/25048">
+                  <span class="papertitle">LookupFFN: Making Transformers Compute-lite for CPU inference</span>
                 </a>
                 <br>
-                <a href="http://www.kevinkarsch.com/">Kevin Karsch</a>,
-                <a href="http://web.engr.illinois.edu/~liao17/">Zicheng Liao</a>,
-                <a href="http://web.engr.illinois.edu/~jjrock2/">Jason Rock</a>,
-                <strong>Jonathan T. Barron</strong>,
-                <a href="http://www.cs.illinois.edu/homes/dhoiem/">Derek Hoiem</a>
+                <a href="https://www.linkedin.com/in/zhanpeng-zeng-530692113/">Zhanpeng Zeng</a>,
+                <a href="https://medav.github.io/">Michael Davies</a>,
+                <strong>Pranav Pulijala</strong>,
+                <a href="https://karu.sites.cs.wisc.edu/wiki/">Karthikeyan Sankaralingam</a>,
+                <a href="https://www.biostat.wisc.edu/~vsingh/">Vikas Singh</a>
                 <br>
-                <em>CVPR</em>, 2013
+                <em>ICML</em>, 2023
                 <br>
-                <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmLUQ5SVJTcUZIYXc/view?usp=sharing">supplement</a> / <a href="data/KarschCVPR2013.bib">bibtex</a>
-                <p>Boundary cues (like occlusions and folds) can be used for shape reconstruction, which improves object recognition for humans and computers.</p>
+                <p>While GPU clusters are the de facto choice for training large deep neural network (DNN) models today, several reasons including ease of workflow, security and cost have led to efforts investigating whether CPUs may be viable for inference in routine use in many sectors of the industry. But the imbalance between the compute capabilities of GPUs and CPUs is huge. Motivated by these considerations, we study a module which is a workhorse within modern DNN architectures, GEMM based Feed Forward Networks (FFNs), and assess the extent to which it can be made compute- (or FLOP-) lite. Specifically, we propose an alternative formulation (we call it LookupFFN) to GEMM based FFNs inspired by the recent studies of using Locality Sensitive Hashing (LSH) to approximate FFNs. Our formulation recasts most essential operations as a memory look-up, leveraging the trade-off between the two resources on any platform: compute and memory (since CPUs offer it in abundance). For RoBERTa language model pretraining, our formulation achieves similar performance compared to GEMM based FFNs, while dramatically reducing the required FLOP. Our development is complemented with a detailed hardware profiling of strategies that will maximize efficiency -- not just on contemporary hardware but on products that will be offered in the near/medium term future. Code is avaiable at https://github.com/mlpen/LookupFFN.</p>
               </td>
             </tr>
           </table>
